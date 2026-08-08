@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F61A8305-202F-4C6C-9815-D3EDDBFB5E91}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AMD</RootNamespace>
+    <AssemblyName>AMD</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acesso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acesso.Designer.cs">
+      <DependentUpon>Acesso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Actors\Sobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actors\Sobre.Designer.cs">
+      <DependentUpon>Sobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajuda\Ajuda_acesso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajuda\Ajuda_acesso.Designer.cs">
+      <DependentUpon>Ajuda_acesso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alterar senha\AlterarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alterar senha\AlterarSenha.Designer.cs">
+      <DependentUpon>AlterarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alterar senha\Fundo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alterar senha\Fundo.Designer.cs">
+      <DependentUpon>Fundo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FRMCadastro_computador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FRMCadastro_computador.Designer.cs">
+      <DependentUpon>FRMCadastro_computador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FRMCadastro_usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FRMCadastro_usuario.Designer.cs">
+      <DependentUpon>FRMCadastro_usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config\clsDados.cs" />
+    <Compile Include="Consultar acesso\FRMConsultar_acesso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultar acesso\FRMConsultar_acesso.Designer.cs">
+      <DependentUpon>FRMConsultar_acesso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desktop AMD\FRMdesktop_AMD_user_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desktop AMD\FRMdesktop_AMD_user_admin.Designer.cs">
+      <DependentUpon>FRMdesktop_AMD_user_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desktop AMD\FRMdesktop_AMD_user_comun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desktop AMD\FRMdesktop_AMD_user_comun.Designer.cs">
+      <DependentUpon>FRMdesktop_AMD_user_comun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desligar computador\FRMDesligar_Reiniciar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desligar computador\FRMDesligar_Reiniciar.Designer.cs">
+      <DependentUpon>FRMDesligar_Reiniciar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config\idAcessoClass.cs" />
+    <Compile Include="Problema\FRMProblema_pc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Problema\FRMProblema_pc.Designer.cs">
+      <DependentUpon>FRMProblema_pc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Termo\FRMTermo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Termo\FRMTermo.Designer.cs">
+      <DependentUpon>FRMTermo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Acesso.resx">
+      <DependentUpon>Acesso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actors\Sobre.resx">
+      <DependentUpon>Sobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajuda\Ajuda_acesso.resx">
+      <DependentUpon>Ajuda_acesso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alterar senha\AlterarSenha.resx">
+      <DependentUpon>AlterarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alterar senha\Fundo.resx">
+      <DependentUpon>Fundo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FRMCadastro_computador.resx">
+      <DependentUpon>FRMCadastro_computador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FRMCadastro_usuario.resx">
+      <DependentUpon>FRMCadastro_usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultar acesso\FRMConsultar_acesso.resx">
+      <DependentUpon>FRMConsultar_acesso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desktop AMD\FRMdesktop_AMD_user_admin.resx">
+      <DependentUpon>FRMdesktop_AMD_user_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desktop AMD\FRMdesktop_AMD_user_comun.resx">
+      <DependentUpon>FRMdesktop_AMD_user_comun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desligar computador\FRMDesligar_Reiniciar.resx">
+      <DependentUpon>FRMDesligar_Reiniciar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Problema\FRMProblema_pc.resx">
+      <DependentUpon>FRMProblema_pc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Termo\FRMTermo.resx">
+      <DependentUpon>FRMTermo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="tempimage.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' == ''" />
+  <PropertyGroup>
+    <SsdtUnitTestVersion>2.0</SsdtUnitTestVersion>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

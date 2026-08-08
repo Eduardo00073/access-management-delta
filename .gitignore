@@ -1,0 +1,40 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Ll]og/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# Build
+*.pdb
+*.ilk
+*.obj
+*.dll
+*.exe
+
+# NuGet
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nupkg
+**/packages/repositories.config
+
+# Misc
+*.bak
+*.cache
+*.tmp
+*.temp
+thumbs.db
+Thumbs.db
+.DS_Store
+desktop.ini
