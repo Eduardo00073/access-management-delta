@@ -382,3 +382,15 @@ Professor de Programação, Informática e Robótica | Desenvolvedor Full Stack
 <div align="center">
   <i>Desenvolvido com 💻 para ambientes educacionais — Controle, segurança e rastreabilidade em laboratórios de informática.</i>
 </div>
+
+---
+
+## ⭐ Gostou do projeto?
+
+Se este projeto te ajudou, deixe uma estrela — isso ajuda outros desenvolvedores e gestores de laboratórios a encontrarem o repositório.
+
+### 🔗 Outros projetos relacionados
+
+💻 [C# — Console & Windows Forms](https://github.com/Eduardo00073/csharp-console-e-desktop) — projetos de console a aplicações desktop em C#.
+
+🛡️ [Cybersecurity Labs](https://github.com/Eduardo00073/cybersecurity-labs) — laboratórios práticos de segurança da informação.
